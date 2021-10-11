@@ -1,75 +1,66 @@
 :root {
-    --waves-dark: #03888d;
-    --waves-bright: #77f8fa;
-    --background-dark:#161f27;
-    --background-light:#23313e;
+	--waves-dark: #03888d;
+	--waves-bright: #77f8fa;
+	--background-dark: #161f27;
+	--background-light: #23313e;
+	--background: #ffffff;
+	--title-green: #007586;
 }
 
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
 
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    min-width: 100vw;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	min-width: 100vw;
+	background-color: var(--background);
 }
 
-container {
-    max-width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    padding-left: 15%;
+.hero {
+	height: 400px;
+	background: rgb(136, 240, 255);
+	background: linear-gradient(
+		0deg,
+		rgba(136, 240, 255, 0.4990371148459384) 0%,
+		rgba(136, 240, 255, 1) 100%
+	);
+	font-family: "Advent Pro", sans-serif;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	font-family: Advent Pro;
+	padding-bottom: 3rem;
 }
 
 h1 {
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Stick No Bills', sans-serif;
+	color: var(--title-green);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 6rem;
+	line-height: 115px;
+	letter-spacing: 0.12em;
 }
 
 h3 {
-    color: var(--waves-bright);
+	color: var(--title-green);
+	margin-top: -10px;
 }
 
-.question {
-    min-height: 20vh;
-    border-radius: 10px;
-    padding: 1rem;
-    background-color:var(--background-dark);
-}
-
-.form {
-    margin: 1rem 0 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form input {
-    background-color: var(--waves-dark);
-}
-
-.result {
-    min-height: 5vh;
-    font-family: 'Stick No Bills', sans-serif;
-    font-size: 2rem;
-    padding: 2rem;
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    background-color: var(--background-light);
-    min-width: 100vw;
-}
-.magic {
-    vertical-align: baseline;
-    max-height: 2rem;
-}
-.number {
-    position:absolute;
-    margin: 30px;
-    max-width: 10%;
+@media (max-width: 600px) {
+	.hero {
+		height: 300px;
+	}
+	h1 {
+		font-size: 3rem;
+	}
+	h3 {
+		font-size: 1rem;
+	}
 }
