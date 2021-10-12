@@ -20,6 +20,7 @@ body {
 	vertical-align: baseline;
 	min-width: 100vw;
 	background-color: var(--background);
+	font-family: "Montserrat", sans-serif;
 }
 
 .hero {
@@ -51,6 +52,28 @@ h1 {
 h3 {
 	color: var(--title-green);
 	margin-top: -10px;
+}
+
+.about-us {
+	height: 300px;
+	color: #6f6f6f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-us-p {
+	max-width: 60vw;
+}
+
+span {
+	display: flex;
+}
+
+.about-us-logo {
+	max-height: 7rem;
+	padding: 0.5rem 1rem;
+	align-self: center;
 }
 
 @media (max-width: 600px) {
