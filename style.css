@@ -1,9 +1,9 @@
 :root {
 	--waves-dark: #03888d;
 	--waves-bright: #77f8fa;
-	--background-dark: #161f27;
-	--background-light: #23313e;
-	--background: #ffffff;
+	--background-light: #ffffff;
+	--background-dark: #f0f0f0;
+	--background-hero: rgb(136, 240, 255);
 	--title-green: #007586;
 }
 
@@ -19,13 +19,15 @@ body {
 	border: 0;
 	vertical-align: baseline;
 	min-width: 100vw;
-	background-color: var(--background);
+	background-color: var(--background-light);
 	font-family: "Montserrat", sans-serif;
 }
 
+/* HERO */
 .hero {
 	height: 400px;
-	background: rgb(136, 240, 255);
+	/* background: rgb(136, 240, 255); */
+	background: var(--background-hero);
 	background: linear-gradient(
 		0deg,
 		rgba(136, 240, 255, 0.4990371148459384) 0%,
@@ -54,6 +56,7 @@ h3 {
 	margin-top: -10px;
 }
 
+/* ABOUT US */
 .about-us {
 	height: 300px;
 	color: #6f6f6f;
@@ -66,7 +69,7 @@ h3 {
 	max-width: 60vw;
 }
 
-span {
+.about-us-span {
 	display: flex;
 }
 
@@ -74,6 +77,15 @@ span {
 	max-height: 7rem;
 	padding: 0.5rem 1rem;
 	align-self: center;
+}
+
+/* PRODUCTS */
+.products {
+	background-color: #f0f0f0;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	padding: 3rem 0;
 }
 
 @media (max-width: 600px) {
