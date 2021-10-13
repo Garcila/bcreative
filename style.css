@@ -26,7 +26,6 @@ body {
 /* HERO */
 .hero {
 	height: 400px;
-	/* background: rgb(136, 240, 255); */
 	background: var(--background-hero);
 	background: linear-gradient(
 		0deg,
@@ -56,8 +55,8 @@ h3 {
 	margin-top: -10px;
 }
 
-/* ABOUT US */
-.about-us {
+/* TEXT INSPIRATION */
+.text-inspiration {
 	height: 300px;
 	color: #6f6f6f;
 	display: flex;
@@ -65,10 +64,11 @@ h3 {
 	align-items: center;
 }
 
-.about-us-p {
+.text-inspiration-p {
 	max-width: 60vw;
 }
 
+/* ABOUT US */
 .about-us-span {
 	display: flex;
 }
@@ -86,6 +86,17 @@ h3 {
 	justify-content: space-around;
 	align-content: center;
 	padding: 3rem 0;
+}
+
+/* FOOTER */
+footer {
+	color: var(--background-light);
+	height: 300px;
+	position: sticky;
+	background-color: var(--background-hero);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @media (max-width: 600px) {
